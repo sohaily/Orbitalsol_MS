@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github\\OrbitalSol\\ReverseProxy.Api\\ReverseProxy.Api.csproj": {}
+    "D:\\Github\\Orbitalsol_MS\\OrbitalSol\\ReverseProxy.Api\\ReverseProxy.Api.csproj": {}
   },
   "projects": {
-    "D:\\Github\\OrbitalSol\\ReverseProxy.Api\\ReverseProxy.Api.csproj": {
+    "D:\\Github\\Orbitalsol_MS\\OrbitalSol\\ReverseProxy.Api\\ReverseProxy.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\OrbitalSol\\ReverseProxy.Api\\ReverseProxy.Api.csproj",
+        "projectUniqueName": "D:\\Github\\Orbitalsol_MS\\OrbitalSol\\ReverseProxy.Api\\ReverseProxy.Api.csproj",
         "projectName": "ReverseProxy.Api",
-        "projectPath": "D:\\Github\\OrbitalSol\\ReverseProxy.Api\\ReverseProxy.Api.csproj",
+        "projectPath": "D:\\Github\\Orbitalsol_MS\\OrbitalSol\\ReverseProxy.Api\\ReverseProxy.Api.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\OrbitalSol\\ReverseProxy.Api\\obj\\",
+        "outputPath": "D:\\Github\\Orbitalsol_MS\\OrbitalSol\\ReverseProxy.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

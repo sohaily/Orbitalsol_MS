@@ -199,11 +199,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\OrbitalSol\\Account.Api\\Account.Api.csproj",
+      "projectUniqueName": "D:\\Github\\Orbitalsol_MS\\OrbitalSol\\Account.Api\\Account.Api.csproj",
       "projectName": "Account.Api",
-      "projectPath": "D:\\Github\\OrbitalSol\\Account.Api\\Account.Api.csproj",
+      "projectPath": "D:\\Github\\Orbitalsol_MS\\OrbitalSol\\Account.Api\\Account.Api.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\OrbitalSol\\Account.Api\\obj\\",
+      "outputPath": "D:\\Github\\Orbitalsol_MS\\OrbitalSol\\Account.Api\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
