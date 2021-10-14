@@ -1,81 +1,107 @@
-﻿// Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
-// Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
-
-
-using IdentityServer4;
-using IdentityServerHost.Quickstart.UI;
+﻿//using Cache.Business;
+using IdentityServer.Api.Filters;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Logging;
+using IdentityServer.Api.Extensions;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Newtonsoft.Json.Serialization;
+using Newtonsoft;
+using System.Reflection;
+using Microsoft.EntityFrameworkCore;
+using IdentityServer4.EntityFramework.Mappers;
+using IdentityServer4.EntityFramework.DbContexts;
+using System.Linq;
+using IdentityServer.Api.Models;
 
 namespace IdentityServer.Api
 {
     public class Startup
     {
-        public IWebHostEnvironment Environment { get; }
+        public IWebHostEnvironment HostingEnvironment { get; }
         public IConfiguration Configuration { get; }
-
-        public Startup(IWebHostEnvironment environment, IConfiguration configuration)
+        const string connectionString = @"DESKTOP-2Q2AIBL;database=IdentityServer;trusted_connection=yes;user id=sa;password=123";
+        public Startup(IConfiguration configuration, IWebHostEnvironment hostingEnvironment)
         {
-            Environment = environment;
+            HostingEnvironment = hostingEnvironment;
             Configuration = configuration;
         }
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            var authority = Configuration.GetSection("Microservices").GetSection("Authority").Value;
+            var migrationsAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
 
-            var builder = services.AddIdentityServer(options =>
+            // configure identity server with in-memory stores, keys, clients and scopes
+            services.AddIdentityServer(options =>
             {
                 options.Events.RaiseErrorEvents = true;
                 options.Events.RaiseInformationEvents = true;
                 options.Events.RaiseFailureEvents = true;
                 options.Events.RaiseSuccessEvents = true;
-
-                // see https://identityserver4.readthedocs.io/en/latest/topics/resources.html
+                options.IssuerUri = authority;
                 options.EmitStaticAudienceClaim = true;
             })
-                .AddTestUsers(TestUsers.Users);
-
-            // in-memory, code config
-            builder.AddInMemoryIdentityResources(Config.IdentityResources);
-            builder.AddInMemoryApiScopes(Config.ApiScopes);
-            builder.AddInMemoryClients(Config.Clients);
-
-            // not recommended for production - you need to store your key material somewhere secure
-            builder.AddDeveloperSigningCredential();
-
-            services.AddAuthentication()
-                .AddGoogle(options =>
+                .AddAspNetIdentity<ApplicationUser>()
+                .AddConfigurationStore(options =>
                 {
-                    options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
+                    options.ConfigureDbContext = b =>
+                        b.UseSqlServer(Configuration.GetConnectionString("ConfigurationStore"),
+                            sql => sql.MigrationsAssembly(migrationsAssembly));
+                })
+                .AddOperationalStore(options =>
+                {
+                    options.ConfigureDbContext = b =>
+                        b.UseSqlServer(Configuration.GetConnectionString("OperationalStore"),
+                            sql => sql.MigrationsAssembly(migrationsAssembly));
 
-                    // register your IdentityServer with Google at https://console.developers.google.com
-                    // enable the Google+ API
-                    // set the redirect URI to https://localhost:5001/signin-google
-                    options.ClientId = "copy client ID from Google here";
-                    options.ClientSecret = "copy client secret from Google here";
+                    // this enables automatic token cleanup. this is optional.
+                    options.EnableTokenCleanup = false;
+                    // options.TokenCleanupInterval = 15; // frequency in seconds to cleanup stale grants. 15 is useful during debugging
                 });
+            //services.AddControllersWithViews().AddNewtonsoftJson();
+            services.AddRazorPages();
+            //.RegisterMvc();
+           // services.AddApplicationInsightsTelemetry();
+            // services
+            // .AddMvc(options => options.EnableEndpointRouting = false)
+            // .AddNewtonsoftJson(opt => opt.SerializerSettings.ContractResolver = new DefaultContractResolver());
+
+            //services.AddScoped<ICopyAsset, CopyAsset>();
+            //services.AddScoped<IUrlParse, UrlParse>();
         }
 
-        public void Configure(IApplicationBuilder app)
+        public void Configure(IApplicationBuilder app,
+            IWebHostEnvironment env
+            //ILoggerFactory loggerFactory
+            )
         {
-            if (Environment.IsDevelopment())
+            if (HostingEnvironment.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+               // app.UseDatabaseErrorPage();
+                //                SeedData.EnsureSeedData(app.ApplicationServices);
+                SeedData.InitializeConfigurationDatabase(app.ApplicationServices, Configuration);
             }
 
+            // loggerFactory.AddApplicationInsights(app.ApplicationServices, LogLevel.Warning);
             app.UseStaticFiles();
+            app.UseIdentityServer();
+
+            app.UseRequestLocalization();
+            app.UseMiddleware(typeof(ErrorHandlingMiddleware));
 
             app.UseRouting();
-            app.UseIdentityServer();
             app.UseAuthorization();
-            app.UseEndpoints(endpoints =>
-            {
+            app.UseEndpoints(endpoints => {
                 endpoints.MapDefaultControllerRoute();
+                endpoints.MapRazorPages();
             });
+            //  app.UseMvcWithDefaultRoute();
+
         }
+      
     }
 }
