@@ -906,23 +906,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\hp\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\Orbitalsol_MS\\OrbitalSol\\ReverseProxy.Api\\ReverseProxy.Api.csproj",
+      "projectUniqueName": "F:\\Github Projects\\Orbitalsol_MS\\OrbitalSol\\ReverseProxy.Api\\ReverseProxy.Api.csproj",
       "projectName": "ReverseProxy.Api",
-      "projectPath": "D:\\Github\\Orbitalsol_MS\\OrbitalSol\\ReverseProxy.Api\\ReverseProxy.Api.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "D:\\Github\\Orbitalsol_MS\\OrbitalSol\\ReverseProxy.Api\\obj\\",
+      "projectPath": "F:\\Github Projects\\Orbitalsol_MS\\OrbitalSol\\ReverseProxy.Api\\ReverseProxy.Api.csproj",
+      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+      "outputPath": "F:\\Github Projects\\Orbitalsol_MS\\OrbitalSol\\ReverseProxy.Api\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -983,7 +979,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
