@@ -1,13 +1,16 @@
-﻿using IdentityServer.Api.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using IdentityServer.API.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
-namespace IdentityServer.Api.Data
+namespace IdentityServer.API.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        //public DbSet<Interests> Interests { get; set; }
       
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
@@ -27,8 +30,6 @@ namespace IdentityServer.Api.Data
                 .Property(b => b.ChatId)
                 .ValueGeneratedOnAdd()
                 .Metadata.SetAfterSaveBehavior(PropertySaveBehavior.Throw);
-
-          
         }
     }
 }

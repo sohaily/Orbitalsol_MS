@@ -74,7 +74,6 @@ D:\Github\Orbitalsol_MS\OrbitalSol\ReverseProxy.Api\bin\Debug\net5.0\Swashbuckle
 D:\Github\Orbitalsol_MS\OrbitalSol\ReverseProxy.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Github\Orbitalsol_MS\OrbitalSol\ReverseProxy.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\Github\Orbitalsol_MS\OrbitalSol\ReverseProxy.Api\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
-D:\Github\Orbitalsol_MS\OrbitalSol\ReverseProxy.Api\obj\Debug\net5.0\ReverseProxy.Api.csproj.AssemblyReference.cache
 D:\Github\Orbitalsol_MS\OrbitalSol\ReverseProxy.Api\obj\Debug\net5.0\ReverseProxy.Api.GeneratedMSBuildEditorConfig.editorconfig
 D:\Github\Orbitalsol_MS\OrbitalSol\ReverseProxy.Api\obj\Debug\net5.0\ReverseProxy.Api.AssemblyInfoInputs.cache
 D:\Github\Orbitalsol_MS\OrbitalSol\ReverseProxy.Api\obj\Debug\net5.0\ReverseProxy.Api.AssemblyInfo.cs
@@ -90,3 +89,4 @@ D:\Github\Orbitalsol_MS\OrbitalSol\ReverseProxy.Api\obj\Debug\net5.0\ReverseProx
 D:\Github\Orbitalsol_MS\OrbitalSol\ReverseProxy.Api\obj\Debug\net5.0\ref\ReverseProxy.Api.dll
 D:\Github\Orbitalsol_MS\OrbitalSol\ReverseProxy.Api\obj\Debug\net5.0\ReverseProxy.Api.pdb
 D:\Github\Orbitalsol_MS\OrbitalSol\ReverseProxy.Api\obj\Debug\net5.0\ReverseProxy.Api.genruntimeconfig.cache
+D:\Github\Orbitalsol_MS\OrbitalSol\ReverseProxy.Api\obj\Debug\net5.0\ReverseProxy.Api.csproj.AssemblyReference.cache

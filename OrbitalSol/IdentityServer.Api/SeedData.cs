@@ -1,14 +1,16 @@
-﻿using System;
-using System.Linq;
-using IdentityServer.Api.Data;
-//using IdentityServer.Api.Data;
-using IdentityServer.Api.Models;
+﻿using Microsoft.Extensions.Configuration;
+using IdentityServer.API.Data;
+using IdentityServer.API.Models;
 using IdentityServer4.EntityFramework.DbContexts;
 using IdentityServer4.EntityFramework.Mappers;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-namespace IdentityServer.Api
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace IdentityServer.API
 {
     public class SeedData
     {

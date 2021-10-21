@@ -11,7 +11,6 @@ D:\Github\Orbitalsol_MS\OrbitalSol\Account.Api\bin\Debug\net5.0\Microsoft.OpenAp
 D:\Github\Orbitalsol_MS\OrbitalSol\Account.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Github\Orbitalsol_MS\OrbitalSol\Account.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Github\Orbitalsol_MS\OrbitalSol\Account.Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\Github\Orbitalsol_MS\OrbitalSol\Account.Api\obj\Debug\net5.0\Account.Api.csproj.AssemblyReference.cache
 D:\Github\Orbitalsol_MS\OrbitalSol\Account.Api\obj\Debug\net5.0\Account.Api.GeneratedMSBuildEditorConfig.editorconfig
 D:\Github\Orbitalsol_MS\OrbitalSol\Account.Api\obj\Debug\net5.0\Account.Api.AssemblyInfoInputs.cache
 D:\Github\Orbitalsol_MS\OrbitalSol\Account.Api\obj\Debug\net5.0\Account.Api.AssemblyInfo.cs
@@ -27,3 +26,11 @@ D:\Github\Orbitalsol_MS\OrbitalSol\Account.Api\obj\Debug\net5.0\Account.Api.dll
 D:\Github\Orbitalsol_MS\OrbitalSol\Account.Api\obj\Debug\net5.0\ref\Account.Api.dll
 D:\Github\Orbitalsol_MS\OrbitalSol\Account.Api\obj\Debug\net5.0\Account.Api.pdb
 D:\Github\Orbitalsol_MS\OrbitalSol\Account.Api\obj\Debug\net5.0\Account.Api.genruntimeconfig.cache
+D:\Github\Orbitalsol_MS\OrbitalSol\Account.Api\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Github\Orbitalsol_MS\OrbitalSol\Account.Api\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Github\Orbitalsol_MS\OrbitalSol\Account.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+D:\Github\Orbitalsol_MS\OrbitalSol\Account.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+D:\Github\Orbitalsol_MS\OrbitalSol\Account.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Github\Orbitalsol_MS\OrbitalSol\Account.Api\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+D:\Github\Orbitalsol_MS\OrbitalSol\Account.Api\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Github\Orbitalsol_MS\OrbitalSol\Account.Api\obj\Debug\net5.0\Account.Api.csproj.AssemblyReference.cache

@@ -5,30 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 
- 
-
+    <title>IdentityServer4</title>
+    
     <link rel="icon" type="image/x-icon" href="~/favicon.ico" />
     <link rel="shortcut icon" type="image/x-icon" href="~/favicon.ico" />
-
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="~/css/FontAwesome.css">
-    <link href="~/css/googlefont.css" rel="stylesheet">
-    <link rel="stylesheet" href="~/css/style.css">
-    <title>Second Trend</title>
+    
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <div class="body-content container-fluid">
-        <!-- content -->
+    <partial name="_Nav" />
+   
+    <div class="container body-container">
         @RenderBody()
-        <!-- content -->
     </div>
-    <div class="copy-wright">
-        Copyright ©2021 All rights reserved second trend
-    </div>
-    <script src="~/js/popper.min.js"></script>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="~/lib/jquery/dist/jquery.slim.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.min.js" asp-append-version="true"></script>
-    @RenderSection("Scripts", required: false)
+
+    @RenderSection("scripts", required: false)
 </body>
 </html>

@@ -1,75 +1,74 @@
 @model LoginViewModel
-@{
-    ViewBag.Title = "Login";
-    Layout = "_Layout";
-}
 
-<div class="loginPage">
-    <div class="formSide">
-        <div class="container">
-            <div class="text-center">
-                <a class="logo" asp-controller="Home" asp-action="Index">
-                    <img src="~/images/second-logo.svg" alt="Second Trend" />
-                </a>
+<div class="login-page">
+    <div class="lead">
+        <h1>Login</h1>
+        <p>Choose how to login</p>
+    </div>
+
+    <partial name="_ValidationSummary" />
+
+    <div class="row">
+
+        @if (Model.EnableLocalLogin)
+        {
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>Local Account</h2>
+                    </div>
+
+                    <div class="card-body">
+                        <form asp-route="Login">
+                            <input type="hidden" asp-for="ReturnUrl" />
+
+                            <div class="form-group">
+                                <label asp-for="Username"></label>
+                                <input class="form-control" placeholder="Username" asp-for="Username" autofocus>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Password"></label>
+                                <input type="password" class="form-control" placeholder="Password" asp-for="Password" autocomplete="off">
+                            </div>
+                            @if (Model.AllowRememberLogin)
+                            {
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" asp-for="RememberLogin">
+                                        <label class="form-check-label" asp-for="RememberLogin">
+                                            Remember My Login
+                                        </label>
+                                    </div>
+                                </div>
+                            }
+                            <button class="btn btn-primary" name="button" value="login">Login</button>
+                            <button class="btn btn-secondary" name="button" value="cancel">Cancel</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <form asp-route="Login" class="pt-4">
-                <input type="hidden" asp-for="ReturnUrl" />
-                <h1>Login</h1>
-                <div class="form-group">
-                    <label asp-for="Username">Username</label>
-                    <input class="form-control" asp-for="Username" autofocus>
-                    <span asp-validation-for="Username" class="text-danger form-text"></span>
-                </div>
-                <div class="form-group">
-                    <label asp-for="Password">Password</label>
-                    <input type="password" class="form-control" asp-for="Password" autocomplete="off">
-                    <span asp-validation-for="Password" class="text-danger form-text"></span>
-                </div>
-                @if (Model.AllowRememberLogin)
-                {
-                    <div class="form-group">
-                        <label asp-for="RememberLogin">
-                            <input type="checkbox" asp-for="RememberLogin">
-                            <strong>Remember My Login</strong>
-                        </label>
-                    </div>
-                }
-                <div class="row">
-                    <div class="col-6 pr-1">
-                        <button name="button" value="login"
-                                class="btn btn-lg btn-block btn-gradient">
-                            <span>Login</span>
-                        </button>
-                    </div>
-                    <div class="col-6 pl-1">
-                        <button name="button" value="cancel"
-                                class="btn btn-lg btn-block btn-gradient">
-                            <span>Cancel</span>
-                        </button>
-                    </div>
-                </div>
+        }
 
-
-            </form>
-        </div>
         @if (Model.VisibleExternalProviders.Any())
         {
-            <div class="container external-providers">
-                <div class="panel panel-default">
-                    @*<div class="panel-heading">
-                        <h1>External Login</h1>
-                    </div>*@
-                    <div class="panel-body">
-                        <ul class="list-inline text-center">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h2>External Account</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-inline">
                             @foreach (var provider in Model.VisibleExternalProviders)
                             {
-                                @*<li class="mb-2">
-                                    <a asp-controller="External" asp-action="Challenge"
-                                       asp-route-provider="@provider.AuthenticationScheme"
-                                       asp-route-returnUrl="@Model.ReturnUrl" class="btn btn-lg btn-gradient">
-                                        <span>@provider.DisplayName</span>
+                                <li class="list-inline-item">
+                                    <a class="btn btn-secondary"
+                                       asp-controller="External"
+                                       asp-action="Challenge"
+                                       asp-route-scheme="@provider.AuthenticationScheme"
+                                       asp-route-returnUrl="@Model.ReturnUrl">
+                                        @provider.DisplayName
                                     </a>
-                                </li>*@
+                                </li>
                             }
                         </ul>
                     </div>
@@ -77,8 +76,12 @@
             </div>
         }
 
-
+        @if (!Model.EnableLocalLogin && !Model.VisibleExternalProviders.Any())
+        {
+            <div class="alert alert-warning">
+                <strong>Invalid login request</strong>
+                There are no login schemes configured for this request.
+            </div>
+        }
     </div>
-    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
-    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
 </div>

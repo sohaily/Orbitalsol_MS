@@ -7,6 +7,3 @@ D:\Github\Orbitalsol_MS\OrbitalSol\Models.Library\obj\Debug\netcoreapp3.1\Models
 D:\Github\Orbitalsol_MS\OrbitalSol\Models.Library\obj\Debug\netcoreapp3.1\Models.Library.dll
 D:\Github\Orbitalsol_MS\OrbitalSol\Models.Library\obj\Debug\netcoreapp3.1\Models.Library.pdb
 D:\Github\Orbitalsol_MS\OrbitalSol\Models.Library\obj\Debug\netcoreapp3.1\Models.Library.csproj.AssemblyReference.cache
-D:\Github\Orbitalsol_MS\OrbitalSol\Models.Library\bin\Debug\netcoreapp3.1\Models.Library.runtimeconfig.json
-D:\Github\Orbitalsol_MS\OrbitalSol\Models.Library\bin\Debug\netcoreapp3.1\Models.Library.runtimeconfig.dev.json
-D:\Github\Orbitalsol_MS\OrbitalSol\Models.Library\obj\Debug\netcoreapp3.1\Models.Library.genruntimeconfig.cache
