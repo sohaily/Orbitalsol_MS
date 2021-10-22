@@ -1,9 +1,11 @@
-﻿using IdentityServer.API.Models;
+﻿using IdentityServer.API.Data;
+using IdentityServer.API.Models;
 using IdentityServer.API.Services;
 using IdentityServer.API.Services.Profile;
 using IdentityServer4.AccessTokenValidation;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -19,6 +21,40 @@ namespace IdentityServer.API.Extensions
 {
     public static class StartupExtensions
     {
+        public static IServiceCollection RegisterIdentityServices(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(configuration.GetConnectionString("UserStore")));
+
+            services.AddIdentity<ApplicationUser, IdentityRole>(options =>
+            {
+                options.Tokens.ChangePhoneNumberTokenProvider = "Phone";
+                options.Password.RequiredLength = 6;
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireDigit = true;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireUppercase = true;
+                options.Password.RequiredUniqueChars = 0;
+                options.User.RequireUniqueEmail = true;
+            })
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
+
+            var identitySettings = new IdentityAppSettings();
+            configuration.GetSection("IdentityAppSettings").Bind(identitySettings);
+            services.Configure<DataProtectionTokenProviderOptions>(options =>
+            {
+                options.TokenLifespan = TimeSpan.FromDays(identitySettings.TokenLifeTimeInDays);
+            });
+
+            return services;
+        }
+        public static IServiceCollection RegisterConfigurationSettings(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.Configure<IdentityAppSettings>(configuration.GetSection("IdentityAppSettings"));
+            services.AddSingleton(configuration);
+            return services;
+        }
         public static IServiceCollection RegisterIdentityServer(
            this IServiceCollection services,
            IWebHostEnvironment hostingEnvironment,
@@ -32,7 +68,7 @@ namespace IdentityServer.API.Extensions
             });
 
             var authority = configuration.GetSection("Microservices").GetSection("Authority").Value;
-           // var migrationsAssembly = GetStartupAssembly();
+            // var migrationsAssembly = GetStartupAssembly();
             //var builder = services.
             //    AddIdentityServer(options =>
             //{
@@ -86,26 +122,33 @@ namespace IdentityServer.API.Extensions
             //        options.RequireHttpsMetadata = false;
             //        //                    }                        
             //    });
-            const string connectionString = @"Data Source=DESKTOP-2Q2AIBL;Initial Catalog=IdentityStore;Integrated Security=False;user id=sa;password=123;MultipleActiveResultSets=true";
+           
+            const string connectionStringConfigurationStore = @"Data Source=DESKTOP-2Q2AIBL;Initial Catalog=ConfigurationStore;Integrated Security=False;user id=sa;password=123;MultipleActiveResultSets=true";
+            const string connectionStringOperationalStore = @"Data Source=DESKTOP-2Q2AIBL;Initial Catalog=OperationalStore;Integrated Security=False;user id=sa;password=123;MultipleActiveResultSets=true";
+            //services.AddDbContext<ApplicationUser>(options =>
+            //options.UseSqlServer(connectionStringIdentityServer);
             //  services.RegisterIdentityServer(HostingEnvironment, Configuration);
             var migrationsAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
-
+           
             // configure identity server with in-memory stores, keys, clients and scopes
             services.AddIdentityServer()
                 .AddDeveloperSigningCredential()
                 .AddTestUsers((List<IdentityServer4.Test.TestUser>)Config.GetUsers())
+               .AddAspNetIdentity<ApplicationUser>()
+           
+           // .AddEntityFrameworkStores<ApplicationDbContext>();
                 // this adds the config data from DB (clients, resources)
                 .AddConfigurationStore(options =>
                 {
                     options.ConfigureDbContext = builder =>
-                        builder.UseSqlServer(connectionString,
+                        builder.UseSqlServer(connectionStringConfigurationStore,
                             sql => sql.MigrationsAssembly(migrationsAssembly));
                 })
                 // this adds the operational data from DB (codes, tokens, consents)
                 .AddOperationalStore(options =>
                 {
                     options.ConfigureDbContext = builder =>
-                        builder.UseSqlServer(connectionString,
+                        builder.UseSqlServer(connectionStringOperationalStore,
                             sql => sql.MigrationsAssembly(migrationsAssembly));
 
                     // this enables automatic token cleanup. this is optional.

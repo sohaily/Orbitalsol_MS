@@ -71,7 +71,7 @@ namespace IdentityServer.API
 
                 foreach (var client in Config.GetClients(configuration))
                 {
-                    if (!context.Clients.Any(i => i.ClientId == client.ClientId))
+                   // if (!context.Clients.Any(i => i.ClientId == client.ClientId))
                         context.Clients.Add(client.ToEntity());
                 }
 

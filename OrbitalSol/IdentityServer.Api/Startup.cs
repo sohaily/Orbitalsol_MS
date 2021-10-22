@@ -31,7 +31,11 @@ namespace IdentityServer.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.RegisterIdentityServer(HostingEnvironment, Configuration);
+            services
+                .RegisterIdentityServices(Configuration)
+                .RegisterConfigurationSettings(Configuration)
+                .RegisterIdentityServer(HostingEnvironment, Configuration);
+
             services.AddControllers();
             services.AddRazorPages();
         }
@@ -42,7 +46,8 @@ namespace IdentityServer.API
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                InitializeConfigurationDatabase(app, Configuration);
+                  InitializeConfigurationDatabase(app, Configuration);
+               // SeedData.InitializeConfigurationDatabase(app.ApplicationServices, Configuration);
             }
             app.UseStaticFiles();
             app.UseIdentityServer();

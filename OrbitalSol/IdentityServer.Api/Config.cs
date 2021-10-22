@@ -69,7 +69,7 @@ namespace IdentityServer.API
             {
                  new Client
                 {
-                    ClientId = "resourceowner",
+                    ClientId = "client",
                     ClientName = "Job Engine",
 
                     RedirectUris = { $"{account}/signin-oidc" },
