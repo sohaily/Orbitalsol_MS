@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "mqdA9r7GV8O10ymDswMZmTqnbO1OrmB70BfIN5hJO8HAlcWT6qo5Q9DKow0wirQ4RAT61BHCGbTkqwB1SnjbMQ==",
+  "dgSpecHash": "Vvol3zO/1yefGItXlnej5yYm7QRzymwbEbX3gn8slriBeyehEReVXVS/w9E/SS2N6Iz0ORPWdI2wa0NC8eeroQ==",
   "success": true,
-  "projectFilePath": "D:\\Github\\Orbitalsol_MS\\OrbitalSol\\Models.Library\\Models.Library.csproj",
+  "projectFilePath": "F:\\Github Projects\\Orbitalsol_MS\\OrbitalSol\\Models.Library\\Models.Library.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\HP\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\hp\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

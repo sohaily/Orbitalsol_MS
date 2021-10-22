@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Github Projects\\Orbitalsol_MS\\OrbitalSol\\Account.Api\\Account.Api.csproj": {}
+    "F:\\Github Projects\\Orbitalsol_MS\\OrbitalSol\\Account.UnitTest\\Account.UnitTest.csproj": {}
   },
   "projects": {
-    "F:\\Github Projects\\Orbitalsol_MS\\OrbitalSol\\Account.Api\\Account.Api.csproj": {
+    "F:\\Github Projects\\Orbitalsol_MS\\OrbitalSol\\Account.UnitTest\\Account.UnitTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Github Projects\\Orbitalsol_MS\\OrbitalSol\\Account.Api\\Account.Api.csproj",
-        "projectName": "Account.Api",
-        "projectPath": "F:\\Github Projects\\Orbitalsol_MS\\OrbitalSol\\Account.Api\\Account.Api.csproj",
+        "projectUniqueName": "F:\\Github Projects\\Orbitalsol_MS\\OrbitalSol\\Account.UnitTest\\Account.UnitTest.csproj",
+        "projectName": "Account.UnitTest",
+        "projectPath": "F:\\Github Projects\\Orbitalsol_MS\\OrbitalSol\\Account.UnitTest\\Account.UnitTest.csproj",
         "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "F:\\Github Projects\\Orbitalsol_MS\\OrbitalSol\\Account.Api\\obj\\",
+        "outputPath": "F:\\Github Projects\\Orbitalsol_MS\\OrbitalSol\\Account.UnitTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,13 +40,25 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[5.0.11, )"
+              "version": "[16.9.4, )"
             },
-            "Swashbuckle.AspNetCore": {
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[5.6.3, )"
+              "version": "[3.0.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
             }
           },
           "imports": [
@@ -60,9 +72,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
