@@ -66,6 +66,7 @@ D:\Github\Orbitalsol_MS\OrbitalSol\IdentityServer.API\bin\Debug\netcoreapp3.1\ru
 D:\Github\Orbitalsol_MS\OrbitalSol\IdentityServer.API\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 D:\Github\Orbitalsol_MS\OrbitalSol\IdentityServer.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\Github\Orbitalsol_MS\OrbitalSol\IdentityServer.API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Github\Orbitalsol_MS\OrbitalSol\IdentityServer.API\obj\Debug\netcoreapp3.1\IdentityServer.API.csproj.AssemblyReference.cache
 D:\Github\Orbitalsol_MS\OrbitalSol\IdentityServer.API\obj\Debug\netcoreapp3.1\IdentityServer.API.AssemblyInfoInputs.cache
 D:\Github\Orbitalsol_MS\OrbitalSol\IdentityServer.API\obj\Debug\netcoreapp3.1\IdentityServer.API.AssemblyInfo.cs
 D:\Github\Orbitalsol_MS\OrbitalSol\IdentityServer.API\obj\Debug\netcoreapp3.1\IdentityServer.API.csproj.CoreCompileInputs.cache
@@ -104,4 +105,3 @@ D:\Github\Orbitalsol_MS\OrbitalSol\IdentityServer.API\obj\Debug\netcoreapp3.1\Id
 D:\Github\Orbitalsol_MS\OrbitalSol\IdentityServer.API\obj\Debug\netcoreapp3.1\IdentityServer.API.dll
 D:\Github\Orbitalsol_MS\OrbitalSol\IdentityServer.API\obj\Debug\netcoreapp3.1\IdentityServer.API.pdb
 D:\Github\Orbitalsol_MS\OrbitalSol\IdentityServer.API\obj\Debug\netcoreapp3.1\IdentityServer.API.genruntimeconfig.cache
-D:\Github\Orbitalsol_MS\OrbitalSol\IdentityServer.API\obj\Debug\netcoreapp3.1\IdentityServer.API.csproj.AssemblyReference.cache
