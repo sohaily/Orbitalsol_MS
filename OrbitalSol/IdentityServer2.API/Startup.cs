@@ -93,7 +93,8 @@ namespace IdentityServer2.API
             if (HostingEnvironment.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-               
+                Users.EnsureSeedData(app.ApplicationServices);
+
             }
             // this will do the initial DB population
             bool seed = Configuration.GetSection("Data").GetValue<bool>("Seed");

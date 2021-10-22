@@ -1,6 +1,8 @@
 ﻿using IdentityServer4;
 using IdentityServer4.Models;
+using IdentityServer4.Test;
 using System.Collections.Generic;
+using System.Security.Claims;
 
 namespace IdentityServer2.API
 {
@@ -99,6 +101,35 @@ namespace IdentityServer2.API
                         "web_api"
                     }
                 }
+            };
+        }
+
+        public static IEnumerable<TestUser> GetUsers()
+        {
+
+            return new List<TestUser>
+            {
+                new TestUser
+                {
+                    Username = "jl@quantumcph.com",
+                    Password = "Sh1022",
+                    IsActive = true,
+                    Claims = new List<Claim>
+                    {
+                        new Claim("role", "admin")
+                    }
+                },
+                new TestUser
+                {
+                    Username = "sha@quantumcph.com",
+                    Password = "Sa1022",
+                    IsActive = true,
+                    Claims = new List<Claim>
+                    {
+                        new Claim("role", "developer")
+                    }
+                }              
+                
             };
         }
     }

@@ -89,3 +89,4 @@ D:\Github\Orbitalsol_MS\OrbitalSol\ReverseProxy.Api\obj\Debug\net5.0\ReverseProx
 D:\Github\Orbitalsol_MS\OrbitalSol\ReverseProxy.Api\obj\Debug\net5.0\ref\ReverseProxy.Api.dll
 D:\Github\Orbitalsol_MS\OrbitalSol\ReverseProxy.Api\obj\Debug\net5.0\ReverseProxy.Api.pdb
 D:\Github\Orbitalsol_MS\OrbitalSol\ReverseProxy.Api\obj\Debug\net5.0\ReverseProxy.Api.genruntimeconfig.cache
+D:\Github\Orbitalsol_MS\OrbitalSol\ReverseProxy.Api\obj\Debug\net5.0\ReverseProxy.Api.csproj.AssemblyReference.cache

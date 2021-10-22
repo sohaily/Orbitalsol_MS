@@ -27,8 +27,9 @@ namespace IdentityServer2.API
                 if (seed)
                 {
                     var connectionString = config.GetConnectionString("DefaultConnection");
-                    Users.EnsureSeedData(connectionString);
-                }
+               
+                //Users.EnsureSeedData(connectionString);
+            }
 
                 host.Run();
             }
