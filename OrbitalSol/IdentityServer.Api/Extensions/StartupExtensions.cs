@@ -123,8 +123,8 @@ namespace IdentityServer.API.Extensions
             //        //                    }                        
             //    });
            
-            const string connectionStringConfigurationStore = @"Data Source=DESKTOP-2Q2AIBL;Initial Catalog=ConfigurationStore;Integrated Security=False;user id=sa;password=123;MultipleActiveResultSets=true";
-            const string connectionStringOperationalStore = @"Data Source=DESKTOP-2Q2AIBL;Initial Catalog=OperationalStore;Integrated Security=False;user id=sa;password=123;MultipleActiveResultSets=true";
+            const string connectionStringConfigurationStore = @"Data Source=DESKTOP-2Q2AIBL\SQLEXPRESS;Initial Catalog=ConfigurationStore;Integrated Security=False;user id=sa;password=123;MultipleActiveResultSets=true";
+            const string connectionStringOperationalStore = @"Data Source=DESKTOP-2Q2AIBL\SQLEXPRESS;Initial Catalog=OperationalStore;Integrated Security=False;user id=sa;password=123;MultipleActiveResultSets=true";
             //services.AddDbContext<ApplicationUser>(options =>
             //options.UseSqlServer(connectionStringIdentityServer);
             //  services.RegisterIdentityServer(HostingEnvironment, Configuration);

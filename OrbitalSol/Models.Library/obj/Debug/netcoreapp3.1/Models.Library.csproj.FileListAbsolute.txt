@@ -1,9 +1,9 @@
 D:\Github\Orbitalsol_MS\OrbitalSol\Models.Library\bin\Debug\netcoreapp3.1\Models.Library.deps.json
 D:\Github\Orbitalsol_MS\OrbitalSol\Models.Library\bin\Debug\netcoreapp3.1\Models.Library.dll
 D:\Github\Orbitalsol_MS\OrbitalSol\Models.Library\bin\Debug\netcoreapp3.1\Models.Library.pdb
-D:\Github\Orbitalsol_MS\OrbitalSol\Models.Library\obj\Debug\netcoreapp3.1\Models.Library.csproj.AssemblyReference.cache
 D:\Github\Orbitalsol_MS\OrbitalSol\Models.Library\obj\Debug\netcoreapp3.1\Models.Library.AssemblyInfoInputs.cache
 D:\Github\Orbitalsol_MS\OrbitalSol\Models.Library\obj\Debug\netcoreapp3.1\Models.Library.AssemblyInfo.cs
 D:\Github\Orbitalsol_MS\OrbitalSol\Models.Library\obj\Debug\netcoreapp3.1\Models.Library.csproj.CoreCompileInputs.cache
 D:\Github\Orbitalsol_MS\OrbitalSol\Models.Library\obj\Debug\netcoreapp3.1\Models.Library.dll
 D:\Github\Orbitalsol_MS\OrbitalSol\Models.Library\obj\Debug\netcoreapp3.1\Models.Library.pdb
+D:\Github\Orbitalsol_MS\OrbitalSol\Models.Library\obj\Debug\netcoreapp3.1\Models.Library.csproj.AssemblyReference.cache
