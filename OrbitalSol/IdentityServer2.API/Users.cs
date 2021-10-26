@@ -33,7 +33,7 @@ namespace IdentityServer2.API
                             EmailConfirmed = true,
                            // CreatedAt = DateTimeOffset.Now
                         };
-                        var result = userMgr.CreateAsync(alice, "Sh@1022").Result;
+                        var result = userMgr.CreateAsync(alice, testUser.Password).Result;
                         if (!result.Succeeded)
                         {
                             throw new Exception(result.Errors.First().Description);

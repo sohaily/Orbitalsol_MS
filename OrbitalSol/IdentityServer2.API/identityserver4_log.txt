@@ -38,3 +38,319 @@ Microsoft.Data.SqlClient.SqlException (0x80131904): There is already an object n
    at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication()
 ClientConnectionId:8766e7e6-55b8-4494-bb11-5aa78f158ca3
 Error Number:2714,State:6,Class:16
+2021-10-25 18:10:30.843 +05:00 [ERR] Failed executing DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [DeviceCodes] (
+    [UserCode] nvarchar(200) NOT NULL,
+    [DeviceCode] nvarchar(200) NOT NULL,
+    [SubjectId] nvarchar(200) NULL,
+    [SessionId] nvarchar(100) NULL,
+    [ClientId] nvarchar(200) NOT NULL,
+    [Description] nvarchar(200) NULL,
+    [CreationTime] datetime2 NOT NULL,
+    [Expiration] datetime2 NOT NULL,
+    [Data] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_DeviceCodes] PRIMARY KEY ([UserCode])
+);
+2021-10-25 18:11:35.160 +05:00 [INF] Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2021-10-25 18:11:35.222 +05:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2021-10-25 18:11:35.222 +05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2021-10-25 18:11:35.223 +05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2021-10-25 18:11:35.223 +05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2021-10-25 18:11:35.223 +05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2021-10-25 18:11:35.223 +05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2021-10-25 18:11:35.687 +05:00 [DBG] Login Url: /Account/Login
+2021-10-25 18:11:35.689 +05:00 [DBG] Login Return Url Parameter: ReturnUrl
+2021-10-25 18:11:35.689 +05:00 [DBG] Logout Url: /Account/Logout
+2021-10-25 18:11:35.689 +05:00 [DBG] ConsentUrl Url: /consent
+2021-10-25 18:11:35.690 +05:00 [DBG] Consent Return Url Parameter: returnUrl
+2021-10-25 18:11:35.690 +05:00 [DBG] Error Url: /home/error
+2021-10-25 18:11:35.690 +05:00 [DBG] Error Id Parameter: errorId
+2021-10-25 18:11:43.964 +05:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2021-10-25 18:11:46.353 +05:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2021-10-25 18:11:49.765 +05:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2021-10-26 09:11:59.739 +05:00 [INF] Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2021-10-26 09:11:59.782 +05:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2021-10-26 09:11:59.782 +05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2021-10-26 09:11:59.782 +05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2021-10-26 09:11:59.782 +05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2021-10-26 09:11:59.782 +05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2021-10-26 09:11:59.782 +05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2021-10-26 09:12:00.070 +05:00 [DBG] Login Url: /Account/Login
+2021-10-26 09:12:00.071 +05:00 [DBG] Login Return Url Parameter: ReturnUrl
+2021-10-26 09:12:00.071 +05:00 [DBG] Logout Url: /Account/Logout
+2021-10-26 09:12:00.071 +05:00 [DBG] ConsentUrl Url: /consent
+2021-10-26 09:12:00.071 +05:00 [DBG] Consent Return Url Parameter: returnUrl
+2021-10-26 09:12:00.071 +05:00 [DBG] Error Url: /home/error
+2021-10-26 09:12:00.071 +05:00 [DBG] Error Id Parameter: errorId
+2021-10-26 09:12:34.487 +05:00 [INF] Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2021-10-26 09:12:34.532 +05:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2021-10-26 09:12:34.532 +05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2021-10-26 09:12:34.532 +05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2021-10-26 09:12:34.532 +05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2021-10-26 09:12:34.533 +05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2021-10-26 09:12:34.533 +05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2021-10-26 09:12:34.781 +05:00 [DBG] Login Url: /Account/Login
+2021-10-26 09:12:34.783 +05:00 [DBG] Login Return Url Parameter: ReturnUrl
+2021-10-26 09:12:34.783 +05:00 [DBG] Logout Url: /Account/Logout
+2021-10-26 09:12:34.783 +05:00 [DBG] ConsentUrl Url: /consent
+2021-10-26 09:12:34.783 +05:00 [DBG] Consent Return Url Parameter: returnUrl
+2021-10-26 09:12:34.783 +05:00 [DBG] Error Url: /home/error
+2021-10-26 09:12:34.783 +05:00 [DBG] Error Id Parameter: errorId
+2021-10-26 09:14:11.318 +05:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2021-10-26 09:14:11.467 +05:00 [WRN] Invalid password for user ce647652-e358-4f12-835a-9ad0d225403f.
+2021-10-26 09:14:11.468 +05:00 [WRN] User ce647652-e358-4f12-835a-9ad0d225403f failed to provide the correct password.
+2021-10-26 09:14:12.020 +05:00 [INF] {"Username":"jl@quantumcph.com","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"invalid credentials","ActivityId":"80000147-0003-fb00-b63f-84710c7967bb","TimeStamp":"2021-10-26T04:14:12.0000000Z","ProcessId":17100,"LocalIpAddress":"::1:44394","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
+2021-10-26 09:14:34.104 +05:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2021-10-26 09:14:34.159 +05:00 [WRN] Invalid password for user 841d1d60-bc76-4c19-b144-89ed4cc6c817.
+2021-10-26 09:14:34.159 +05:00 [WRN] User 841d1d60-bc76-4c19-b144-89ed4cc6c817 failed to provide the correct password.
+2021-10-26 09:14:34.172 +05:00 [INF] {"Username":"sha@quantumcph.com","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"invalid credentials","ActivityId":"8000033f-0006-ff00-b63f-84710c7967bb","TimeStamp":"2021-10-26T04:14:34.0000000Z","ProcessId":17100,"LocalIpAddress":"::1:44394","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
+2021-10-26 09:14:49.273 +05:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2021-10-26 09:14:49.306 +05:00 [WRN] Invalid password for user 0642a2a8-7b98-4b52-b14a-69878a62f500.
+2021-10-26 09:14:49.306 +05:00 [WRN] User 0642a2a8-7b98-4b52-b14a-69878a62f500 failed to provide the correct password.
+2021-10-26 09:14:49.312 +05:00 [INF] {"Username":"alice","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"invalid credentials","ActivityId":"80000017-000f-fd00-b63f-84710c7967bb","TimeStamp":"2021-10-26T04:14:49.0000000Z","ProcessId":17100,"LocalIpAddress":"::1:44394","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
+2021-10-26 09:14:53.704 +05:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2021-10-26 09:14:53.737 +05:00 [WRN] Invalid password for user 0642a2a8-7b98-4b52-b14a-69878a62f500.
+2021-10-26 09:14:53.738 +05:00 [WRN] User 0642a2a8-7b98-4b52-b14a-69878a62f500 failed to provide the correct password.
+2021-10-26 09:14:53.744 +05:00 [INF] {"Username":"alice","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"invalid credentials","ActivityId":"800002a7-0004-fc00-b63f-84710c7967bb","TimeStamp":"2021-10-26T04:14:53.0000000Z","ProcessId":17100,"LocalIpAddress":"::1:44394","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
+2021-10-26 09:18:49.804 +05:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2021-10-26 09:19:01.763 +05:00 [WRN] Invalid password for user 0642a2a8-7b98-4b52-b14a-69878a62f500.
+2021-10-26 09:19:01.865 +05:00 [WRN] User 0642a2a8-7b98-4b52-b14a-69878a62f500 failed to provide the correct password.
+2021-10-26 09:19:11.110 +05:00 [INF] {"Username":"alice","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"invalid credentials","ActivityId":"80000149-0003-fb00-b63f-84710c7967bb","TimeStamp":"2021-10-26T04:19:11.0000000Z","ProcessId":17100,"LocalIpAddress":"::1:44394","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
+2021-10-26 09:19:48.702 +05:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2021-10-26 09:19:51.482 +05:00 [WRN] Invalid password for user ce647652-e358-4f12-835a-9ad0d225403f.
+2021-10-26 09:19:51.483 +05:00 [WRN] User ce647652-e358-4f12-835a-9ad0d225403f failed to provide the correct password.
+2021-10-26 09:21:04.688 +05:00 [WRN] Invalid password for user ce647652-e358-4f12-835a-9ad0d225403f.
+2021-10-26 09:21:04.688 +05:00 [WRN] User ce647652-e358-4f12-835a-9ad0d225403f failed to provide the correct password.
+2021-10-26 09:21:32.158 +05:00 [INF] {"Username":"jl@quantumcph.com","Provider":null,"ProviderUserId":null,"SubjectId":"ce647652-e358-4f12-835a-9ad0d225403f","DisplayName":"jl@quantumcph.com","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"80000199-000d-fd00-b63f-84710c7967bb","TimeStamp":"2021-10-26T04:21:32.0000000Z","ProcessId":17100,"LocalIpAddress":"::1:44394","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-10-26 09:34:49.097 +05:00 [INF] Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2021-10-26 09:34:49.175 +05:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2021-10-26 09:34:49.176 +05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2021-10-26 09:34:49.176 +05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2021-10-26 09:34:49.176 +05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2021-10-26 09:34:49.176 +05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2021-10-26 09:34:49.176 +05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2021-10-26 09:34:49.536 +05:00 [DBG] Login Url: /Account/Login
+2021-10-26 09:34:49.538 +05:00 [DBG] Login Return Url Parameter: ReturnUrl
+2021-10-26 09:34:49.538 +05:00 [DBG] Logout Url: /Account/Logout
+2021-10-26 09:34:49.538 +05:00 [DBG] ConsentUrl Url: /consent
+2021-10-26 09:34:49.538 +05:00 [DBG] Consent Return Url Parameter: returnUrl
+2021-10-26 09:34:49.538 +05:00 [DBG] Error Url: /home/error
+2021-10-26 09:34:49.538 +05:00 [DBG] Error Id Parameter: errorId
+2021-10-26 09:35:34.243 +05:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2021-10-26 09:45:27.869 +05:00 [WRN] Invalid password for user ce647652-e358-4f12-835a-9ad0d225403f.
+2021-10-26 09:45:27.870 +05:00 [WRN] User ce647652-e358-4f12-835a-9ad0d225403f failed to provide the correct password.
+2021-10-26 09:45:44.059 +05:00 [INF] {"Username":"jl@quantumcph.com","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"invalid credentials","ActivityId":"800002a4-0000-ff00-b63f-84710c7967bb","TimeStamp":"2021-10-26T04:45:44.0000000Z","ProcessId":35356,"LocalIpAddress":"::1:44394","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
+2021-10-26 09:59:20.672 +05:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2021-10-26 09:59:26.828 +05:00 [WRN] Invalid password for user 3bf90f4a-60d2-4df3-b14e-80e456eb4909.
+2021-10-26 09:59:26.828 +05:00 [WRN] User 3bf90f4a-60d2-4df3-b14e-80e456eb4909 failed to provide the correct password.
+2021-10-26 09:59:30.626 +05:00 [INF] {"Username":"bob","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"invalid credentials","ActivityId":"800001ec-0001-fe00-b63f-84710c7967bb","TimeStamp":"2021-10-26T04:59:30.0000000Z","ProcessId":35356,"LocalIpAddress":"::1:44394","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
+2021-10-26 10:14:04.345 +05:00 [INF] Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2021-10-26 10:14:04.389 +05:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2021-10-26 10:14:04.390 +05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2021-10-26 10:14:04.390 +05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2021-10-26 10:14:04.390 +05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2021-10-26 10:14:04.390 +05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2021-10-26 10:14:04.390 +05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2021-10-26 10:14:04.696 +05:00 [DBG] Login Url: /Account/Login
+2021-10-26 10:14:04.698 +05:00 [DBG] Login Return Url Parameter: ReturnUrl
+2021-10-26 10:14:04.698 +05:00 [DBG] Logout Url: /Account/Logout
+2021-10-26 10:14:04.698 +05:00 [DBG] ConsentUrl Url: /consent
+2021-10-26 10:14:04.698 +05:00 [DBG] Consent Return Url Parameter: returnUrl
+2021-10-26 10:14:04.698 +05:00 [DBG] Error Url: /home/error
+2021-10-26 10:14:04.698 +05:00 [DBG] Error Id Parameter: errorId
+2021-10-26 10:15:52.796 +05:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2021-10-26 10:15:55.322 +05:00 [WRN] Invalid password for user ce647652-e358-4f12-835a-9ad0d225403f.
+2021-10-26 10:15:55.323 +05:00 [WRN] User ce647652-e358-4f12-835a-9ad0d225403f failed to provide the correct password.
+2021-10-26 10:15:55.326 +05:00 [WRN] User ce647652-e358-4f12-835a-9ad0d225403f is locked out.
+2021-10-26 10:15:55.460 +05:00 [WRN] User ce647652-e358-4f12-835a-9ad0d225403f is currently locked out.
+2021-10-26 10:16:10.939 +05:00 [INF] {"Username":"jl@quantumcph.com","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"invalid credentials","ActivityId":"800002a6-0000-ff00-b63f-84710c7967bb","TimeStamp":"2021-10-26T05:16:10.0000000Z","ProcessId":44000,"LocalIpAddress":"::1:44394","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
+2021-10-26 10:16:45.722 +05:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2021-10-26 10:16:47.816 +05:00 [WRN] User ce647652-e358-4f12-835a-9ad0d225403f is currently locked out.
+2021-10-26 10:16:50.521 +05:00 [INF] {"Username":"jl@quantumcph.com","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"invalid credentials","ActivityId":"80000112-0009-ff00-b63f-84710c7967bb","TimeStamp":"2021-10-26T05:16:50.0000000Z","ProcessId":44000,"LocalIpAddress":"::1:44394","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
+2021-10-26 10:16:53.701 +05:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2021-10-26 10:16:55.699 +05:00 [WRN] User ce647652-e358-4f12-835a-9ad0d225403f is currently locked out.
+2021-10-26 10:17:16.474 +05:00 [WRN] User ce647652-e358-4f12-835a-9ad0d225403f is currently locked out.
+2021-10-26 10:17:22.283 +05:00 [INF] {"Username":"jl@quantumcph.com","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"invalid credentials","ActivityId":"80000165-000a-fe00-b63f-84710c7967bb","TimeStamp":"2021-10-26T05:17:22.0000000Z","ProcessId":44000,"LocalIpAddress":"::1:44394","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
+2021-10-26 10:17:26.299 +05:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2021-10-26 10:17:28.250 +05:00 [WRN] Invalid password for user ce647652-e358-4f12-835a-9ad0d225403f.
+2021-10-26 10:17:28.251 +05:00 [WRN] User ce647652-e358-4f12-835a-9ad0d225403f failed to provide the correct password.
+2021-10-26 10:17:45.273 +05:00 [INF] {"Username":"jl@quantumcph.com","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"invalid credentials","ActivityId":"800001f5-000c-fc00-b63f-84710c7967bb","TimeStamp":"2021-10-26T05:17:45.0000000Z","ProcessId":44000,"LocalIpAddress":"::1:44394","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
+2021-10-26 10:28:47.666 +05:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2021-10-26 10:28:50.988 +05:00 [DBG] Augmenting SignInContext
+2021-10-26 10:28:50.989 +05:00 [DBG] Adding idp claim with value: local
+2021-10-26 10:28:50.989 +05:00 [DBG] Adding auth_time claim with value: 1635226130
+2021-10-26 10:28:51.005 +05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2021-10-26 10:28:54.075 +05:00 [INF] {"Username":"alice","Provider":null,"ProviderUserId":null,"SubjectId":"0642a2a8-7b98-4b52-b14a-69878a62f500","DisplayName":"alice","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"8000012d-000e-fc00-b63f-84710c7967bb","TimeStamp":"2021-10-26T05:28:54.0000000Z","ProcessId":44000,"LocalIpAddress":"::1:44394","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-10-26 10:31:35.260 +05:00 [INF] Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2021-10-26 10:31:35.292 +05:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2021-10-26 10:31:35.293 +05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2021-10-26 10:31:35.293 +05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2021-10-26 10:31:35.293 +05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2021-10-26 10:31:35.293 +05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2021-10-26 10:31:35.293 +05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2021-10-26 10:31:35.544 +05:00 [DBG] Login Url: /Account/Login
+2021-10-26 10:31:35.545 +05:00 [DBG] Login Return Url Parameter: ReturnUrl
+2021-10-26 10:31:35.545 +05:00 [DBG] Logout Url: /Account/Logout
+2021-10-26 10:31:35.545 +05:00 [DBG] ConsentUrl Url: /consent
+2021-10-26 10:31:35.545 +05:00 [DBG] Consent Return Url Parameter: returnUrl
+2021-10-26 10:31:35.545 +05:00 [DBG] Error Url: /home/error
+2021-10-26 10:31:35.545 +05:00 [DBG] Error Id Parameter: errorId
+2021-10-26 10:32:11.657 +05:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2021-10-26 10:32:14.187 +05:00 [DBG] Augmenting SignInContext
+2021-10-26 10:32:14.189 +05:00 [DBG] Adding idp claim with value: local
+2021-10-26 10:32:14.189 +05:00 [DBG] Adding auth_time claim with value: 1635226334
+2021-10-26 10:32:14.201 +05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2021-10-26 10:32:14.211 +05:00 [INF] {"Username":"alice","Provider":null,"ProviderUserId":null,"SubjectId":"0642a2a8-7b98-4b52-b14a-69878a62f500","DisplayName":"alice","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"800002a9-0004-fc00-b63f-84710c7967bb","TimeStamp":"2021-10-26T05:32:14.0000000Z","ProcessId":30040,"LocalIpAddress":"::1:44394","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-10-26 10:32:32.471 +05:00 [DBG] CORS request made for path: /Account/Logout from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2021-10-26 10:32:32.504 +05:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2021-10-26 10:32:32.506 +05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2021-10-26 10:32:32.506 +05:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2021-10-26 10:32:32.507 +05:00 [INF] {"SubjectId":"0642a2a8-7b98-4b52-b14a-69878a62f500","DisplayName":"Alice Smith","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"80000131-000e-fc00-b63f-84710c7967bb","TimeStamp":"2021-10-26T05:32:32.0000000Z","ProcessId":30040,"LocalIpAddress":"::1:44394","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
+2021-10-26 10:32:32.515 +05:00 [DBG] SignOutCalled set; processing post-signout session cleanup.
+2021-10-26 10:36:17.319 +05:00 [DBG] CORS request made for path: /Account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2021-10-26 10:36:21.187 +05:00 [DBG] Augmenting SignInContext
+2021-10-26 10:36:21.188 +05:00 [DBG] Adding idp claim with value: local
+2021-10-26 10:36:21.188 +05:00 [DBG] Adding auth_time claim with value: 1635226581
+2021-10-26 10:36:21.188 +05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2021-10-26 10:36:35.929 +05:00 [INF] {"Username":"sha@quantumcph.com","Provider":null,"ProviderUserId":null,"SubjectId":"841d1d60-bc76-4c19-b144-89ed4cc6c817","DisplayName":"sha@quantumcph.com","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"80000133-000e-fc00-b63f-84710c7967bb","TimeStamp":"2021-10-26T05:36:35.0000000Z","ProcessId":30040,"LocalIpAddress":"::1:44394","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-10-26 10:37:08.803 +05:00 [ERR] Failed executing DbCommand (57ms) [Parameters=[@__filter_SubjectId_0='?' (Size = 200)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Key], [p].[ClientId], [p].[ConsumedTime], [p].[CreationTime], [p].[Data], [p].[Description], [p].[Expiration], [p].[SessionId], [p].[SubjectId], [p].[Type]
+FROM [PersistedGrants] AS [p]
+WHERE [p].[SubjectId] = @__filter_SubjectId_0
+2021-10-26 10:37:08.947 +05:00 [ERR] An exception occurred while iterating over the results of a query for context type 'IdentityServer4.EntityFramework.DbContexts.PersistedGrantDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ConsumedTime'.
+Invalid column name 'Description'.
+Invalid column name 'SessionId'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:26366542-624a-4e88-a98e-a75acaa30d81
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ConsumedTime'.
+Invalid column name 'Description'.
+Invalid column name 'SessionId'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:26366542-624a-4e88-a98e-a75acaa30d81
+Error Number:207,State:1,Class:16
+2021-10-26 10:37:09.135 +05:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'ConsumedTime'.
+Invalid column name 'Description'.
+Invalid column name 'SessionId'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToArrayAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at IdentityServer4.EntityFramework.Stores.PersistedGrantStore.GetAllAsync(PersistedGrantFilter filter)
+   at IdentityServer4.Services.DefaultPersistedGrantService.GetAllGrantsAsync(String subjectId)
+   at IdentityServer4.Services.DefaultIdentityServerInteractionService.GetAllUserGrantsAsync()
+   at IdentityServerHost.Quickstart.UI.GrantsController.BuildViewModelAsync() in D:\Github\Orbitalsol_MS\OrbitalSol\IdentityServer2.API\Quickstart\Grants\GrantsController.cs:line 64
+   at IdentityServerHost.Quickstart.UI.GrantsController.Index() in D:\Github\Orbitalsol_MS\OrbitalSol\IdentityServer2.API\Quickstart\Grants\GrantsController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Localization.RequestLocalizationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.IdentityServerMiddleware.Invoke(HttpContext context, IEndpointRouter router, IUserSession session, IEventService events, IBackChannelLogoutService backChannelLogoutService)
+   at IdentityServer4.Hosting.MutualTlsEndpointMiddleware.Invoke(HttpContext context, IAuthenticationSchemeProvider schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at IdentityServer4.Hosting.BaseUrlMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:26366542-624a-4e88-a98e-a75acaa30d81
+Error Number:207,State:1,Class:16
+2021-10-26 17:47:13.656 +05:00 [ERR] Failed executing DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [AspNetRoles] (
+    [Id] nvarchar(450) NOT NULL,
+    [Name] nvarchar(256) NULL,
+    [NormalizedName] nvarchar(256) NULL,
+    [ConcurrencyStamp] nvarchar(max) NULL,
+    CONSTRAINT [PK_AspNetRoles] PRIMARY KEY ([Id])
+);
+2021-10-26 17:49:33.961 +05:00 [WRN] User a723500c-7404-499c-8b9d-8b9fced74ba5 password validation failed: PasswordRequiresNonAlphanumeric.
+2021-10-26 17:49:37.751 +05:00 [FTL] Application startup exception
+System.Exception: Passwords must have at least one non alphanumeric character.
+   at IdentityServer2.API.Users.EnsureSeedData(IServiceProvider serviceProvider) in D:\Github\Orbitalsol_MS\OrbitalSol\IdentityServer2.API\Users.cs:line 42
+   at IdentityServer2.API.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in D:\Github\Orbitalsol_MS\OrbitalSol\IdentityServer2.API\Startup.cs:line 96
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISServerSetupFilter.<>c__DisplayClass2_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.WebHost.BuildApplication()
+2021-10-26 17:49:51.092 +05:00 [WRN] User efa197a8-43d2-4b22-8a19-e0e80b0845f2 password validation failed: PasswordRequiresNonAlphanumeric.
+2021-10-26 17:51:24.623 +05:00 [WRN] User 2b410077-ff2d-4b81-bc10-d41e46bb037c password validation failed: PasswordRequiresNonAlphanumeric;PasswordRequiresDigit.
+2021-10-26 17:52:10.264 +05:00 [INF] Starting IdentityServer4 version 4.1.2+997a6cdd643e46cd5762b710c4ddc43574cbec2e
+2021-10-26 17:52:10.299 +05:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2021-10-26 17:52:10.299 +05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2021-10-26 17:52:10.299 +05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2021-10-26 17:52:10.299 +05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2021-10-26 17:52:10.299 +05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2021-10-26 17:52:10.299 +05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2021-10-26 17:52:10.567 +05:00 [DBG] Login Url: /Account/Login
+2021-10-26 17:52:10.568 +05:00 [DBG] Login Return Url Parameter: ReturnUrl
+2021-10-26 17:52:10.568 +05:00 [DBG] Logout Url: /Account/Logout
+2021-10-26 17:52:10.568 +05:00 [DBG] ConsentUrl Url: /consent
+2021-10-26 17:52:10.568 +05:00 [DBG] Consent Return Url Parameter: returnUrl
+2021-10-26 17:52:10.568 +05:00 [DBG] Error Url: /home/error
+2021-10-26 17:52:10.569 +05:00 [DBG] Error Id Parameter: errorId
+2021-10-26 17:52:10.670 +05:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2021-10-26 17:52:10.674 +05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2021-10-26 17:52:10.675 +05:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2021-10-26 17:52:10.679 +05:00 [INF] Identity.Application was not authenticated. Failure message: No principal.
+2021-10-26 17:52:10.685 +05:00 [INF] Identity.Application was not authenticated. Failure message: No principal.
+2021-10-26 17:52:11.041 +05:00 [DBG] SignOutCalled set; processing post-signout session cleanup.
+2021-10-26 17:52:11.044 +05:00 [INF] Identity.Application was not authenticated. Failure message: No principal.
+2021-10-26 17:52:29.204 +05:00 [DBG] CORS request made for path: /account/login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2021-10-26 17:52:33.919 +05:00 [DBG] Augmenting SignInContext
+2021-10-26 17:52:33.919 +05:00 [DBG] Adding idp claim with value: local
+2021-10-26 17:52:33.920 +05:00 [DBG] Adding auth_time claim with value: 1635252753
+2021-10-26 17:52:33.925 +05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2021-10-26 17:52:36.585 +05:00 [INF] {"Username":"sha@quantumcph.com","Provider":null,"ProviderUserId":null,"SubjectId":"609aabea-80af-464f-9052-29b81a2dcc1f","DisplayName":"sha@quantumcph.com","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"8000015a-000a-fd00-b63f-84710c7967bb","TimeStamp":"2021-10-26T12:52:36.0000000Z","ProcessId":5128,"LocalIpAddress":"::1:44394","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2021-10-26 17:52:46.354 +05:00 [DBG] CORS request made for path: /Account/Logout from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2021-10-26 17:52:46.385 +05:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2021-10-26 17:52:46.385 +05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2021-10-26 17:52:46.386 +05:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2021-10-26 17:52:46.386 +05:00 [INF] {"SubjectId":"609aabea-80af-464f-9052-29b81a2dcc1f","DisplayName":"sha@quantumcph.com","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"8000015e-000a-fd00-b63f-84710c7967bb","TimeStamp":"2021-10-26T12:52:46.0000000Z","ProcessId":5128,"LocalIpAddress":"::1:44394","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
+2021-10-26 17:52:46.392 +05:00 [DBG] SignOutCalled set; processing post-signout session cleanup.

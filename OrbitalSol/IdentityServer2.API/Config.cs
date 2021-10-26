@@ -112,7 +112,7 @@ namespace IdentityServer2.API
                 new TestUser
                 {
                     Username = "jl@quantumcph.com",
-                    Password = "Sh1022",
+                    Password = "Test@123",
                     IsActive = true,
                     Claims = new List<Claim>
                     {
@@ -122,7 +122,7 @@ namespace IdentityServer2.API
                 new TestUser
                 {
                     Username = "sha@quantumcph.com",
-                    Password = "Sa1022",
+                    Password = "Test@123",
                     IsActive = true,
                     Claims = new List<Claim>
                     {
