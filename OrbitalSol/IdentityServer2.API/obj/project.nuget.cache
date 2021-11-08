@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5J3Zp9qJ1+XhWFA9fCFSFboBWg3c5fnFjlBIcjPtKq4Yz5To3zCssuh0yl0SMGMg0+haBU7n/IBDC6dOmgmsbg==",
+  "dgSpecHash": "HnvrXm3uGOC15t6w1k9PMP4UL6n33B2d54UwY+zeglbVNwJl4MObDN8v7xeWblxcQlVHjL/rQd7A0J9ZxHvr6g==",
   "success": true,
-  "projectFilePath": "D:\\Github\\Orbitalsol_MS\\OrbitalSol\\IdentityServer2.API\\IdentityServer2.API.csproj",
+  "projectFilePath": "D:\\Github\\Orbitalsol_MS\\OrbitalSol\\IdentityServer2.API\\IdentityServer.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

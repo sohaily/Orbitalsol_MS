@@ -9700,9 +9700,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github\\Orbitalsol_MS\\OrbitalSol\\IdentityServer2.API\\IdentityServer2.API.csproj",
-      "projectName": "IdentityServer2.API",
-      "projectPath": "D:\\Github\\Orbitalsol_MS\\OrbitalSol\\IdentityServer2.API\\IdentityServer2.API.csproj",
+      "projectUniqueName": "D:\\Github\\Orbitalsol_MS\\OrbitalSol\\IdentityServer2.API\\IdentityServer.API.csproj",
+      "projectName": "IdentityServer.API",
+      "projectPath": "D:\\Github\\Orbitalsol_MS\\OrbitalSol\\IdentityServer2.API\\IdentityServer.API.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
       "outputPath": "D:\\Github\\Orbitalsol_MS\\OrbitalSol\\IdentityServer2.API\\obj\\",
       "projectStyle": "PackageReference",

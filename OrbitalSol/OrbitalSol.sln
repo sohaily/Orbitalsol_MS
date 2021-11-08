@@ -23,9 +23,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{528744
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Models.Library", "Models.Library\Models.Library.csproj", "{95BB17D7-0761-442D-9BC0-DB4F0987502F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer2", "IdentityServer2", "{1EFB9DC6-BB31-4BDC-BEF9-8AD95D504F7E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityServer", "{1EFB9DC6-BB31-4BDC-BEF9-8AD95D504F7E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer2.API", "IdentityServer2.API\IdentityServer2.API.csproj", "{09CFF6F5-50DD-4EC9-9B3B-ED212B86E382}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer.API", "IdentityServer2.API\IdentityServer.API.csproj", "{09CFF6F5-50DD-4EC9-9B3B-ED212B86E382}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Account.UnitTest", "Account.UnitTest\Account.UnitTest.csproj", "{C77ADA7D-EA1D-4753-8646-82443B24BA4C}"
 EndProject
